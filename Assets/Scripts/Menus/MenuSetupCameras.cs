@@ -6,7 +6,7 @@ using ClickerEngine;
 public class MenuSetupCameras : IMenu
 {
 	private const float ButtonYInitialPosition = 0.0f;
-	private const float ButtonYSpacing = 80.0f;
+	private const float ButtonYSpacing = -80.0f;
 	public UIButton btn_Back, btn_Active;
 	public GameObject CameraButtonPrefab;
 	public GameObject ScrollViewContentParent;
@@ -39,6 +39,11 @@ public class MenuSetupCameras : IMenu
 		}
 		DestroyCameraList ();
 
+	}
+
+	public override void OnBackButtonPressed ()
+	{
+		MenuManager.Instance.PopMenu ();
 	}
 
 	private void btn_Back_OnClick ()
@@ -91,6 +96,7 @@ public class MenuSetupCameras : IMenu
 	}
 
 	private IEnumerator WaitForWebCamToStart(WebCamTexture tex){
+		yield return new WaitForEndOfFrame ();
 		while (!tex.isPlaying) {
 			yield return new WaitForEndOfFrame ();
 		}

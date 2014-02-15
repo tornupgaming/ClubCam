@@ -1,12 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menus/MenuCameraListButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menus/MenuMainDisplay.cs">
     <Files>
-      <File FileName="Assets/Scripts/Menus/MenuManager.cs" Line="72" Column="12" />
-      <File FileName="Assets/Scripts/Menus/IMenu.cs" Line="32" Column="22" />
-      <File FileName="Assets/Scripts/Menus/MenuMain.cs" Line="28" Column="2" />
-      <File FileName="Assets/Scripts/Menus/MenuSetupCameras.cs" Line="17" Column="35" />
-      <File FileName="Assets/Scripts/Menus/MenuCameraListButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menus/MenuManager.cs" Line="54" Column="1" />
+      <File FileName="Assets/Scripts/Menus/MenuSetupCameras.cs" Line="9" Column="40" />
+      <File FileName="Assets/Scripts/CameraManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/WebCam.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menus/MenuMain.cs" Line="23" Column="50" />
+      <File FileName="Assets/Scripts/Menus/MenuMainDisplay.cs" Line="27" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -25,11 +25,10 @@ namespace ClickerEngine
 		public virtual void OnStart(){}
 		public virtual void OnUpdate(){}
 		public virtual void OnShow(){
-			Debug.Log ("Showing menu: " + ToString());
 			ParentObject.SetActive (true);
 		}
 		public virtual void OnHide(){
-			Debug.Log ("Hiding menu: " + ToString());ParentObject.SetActive (false);}
+			ParentObject.SetActive (false);}
 		public virtual IEnumerator OnAnimatedShow(){yield break;}
 		public virtual IEnumerator OnAnimatedHide(Action OnFinish){yield break;}
 		public virtual void OnBackButtonPressed(){}

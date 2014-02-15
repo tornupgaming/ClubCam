@@ -1,5 +1,6 @@
 using System;
 using ClickerEngine;
+using UnityEngine;
 
 public class MenuMain : IMenu
 {
@@ -19,6 +20,7 @@ public class MenuMain : IMenu
 	}
 
 	private void btn_StartDisplay_OnClick(){
+		MenuManager.Instance.PushMenu ("MenuMainDisplay");
 
 	}
 
@@ -29,6 +31,11 @@ public class MenuMain : IMenu
 	public override string ToString ()
 	{
 		return "MenuMain";
+	}
+
+	public override void OnBackButtonPressed ()
+	{
+		Application.Quit();
 	}
 }
 
